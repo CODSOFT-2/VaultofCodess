@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VaultofCodes - Certificate Verifier</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="brand-header">
+    <div class="container">
+      <img src="logo.png" alt="VaultofCodes Logo" class="brand-logo" />
+      <h1 class="brand-title">VaultofCodes</h1>
+      <p class="brand-subtitle">Certificate Verification Portal</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <section class="verifier-section">
+        <h2>Verify Your Certificate</h2>
+        <p>Enter your registered email address or certificate ID to validate your certification</p>
+        <div class="input-group">
+          <input id="identifier" type="text" placeholder="Enter Email or Certificate ID" />
+          <button id="verify-btn">
+            <i class="fas fa-search"></i> Verify
+          </button>
+        </div>
+        <div class="spinner hidden" id="spinner"></div>
+        <div id="result" class="result-box"></div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="current-year"></span> VaultofCodes. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
